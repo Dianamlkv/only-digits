@@ -6,11 +6,11 @@ public class OnlyDigits {
     static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter some text: ");
-        String text = scanner.nextLine();
+        String testedString = scanner.nextLine();
 
         boolean isOnlyDigits = true;
-        for (int i = 0; i < text.length(); i++) {
-            if (!Character.isDigit(text.charAt(i))) {
+        for (int i = 0; i < testedString.length(); i++) {
+            if (!Character.isDigit(testedString.charAt(i))) {
                 isOnlyDigits = false;
                 break;
             }
